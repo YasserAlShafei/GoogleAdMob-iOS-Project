@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A332018F215C07D075DF7ED /* Pods_BannarAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7883BD3C27F48D340001A429 /* Pods_BannarAd.framework */; };
+		782A0AB127F4A4E7009949E6 /* NativeAdsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A0AB027F4A4E7009949E6 /* NativeAdsVC.swift */; };
+		784ABE3727F4A17E0032929B /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784ABE3627F4A17E0032929B /* BannerVC.swift */; };
+		7883BD5027F48DCA0001A429 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A15CCE27F3AE980042E294 /* GoogleAppMeasurement.xcframework */; };
+		7883BD5127F48DCA0001A429 /* GoogleAppMeasurement.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78A15CCE27F3AE980042E294 /* GoogleAppMeasurement.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78A15CB527F375E00042E294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A15CB427F375E00042E294 /* AppDelegate.swift */; };
+		78A15CB727F375E00042E294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A15CB627F375E00042E294 /* SceneDelegate.swift */; };
+		78A15CB927F375E00042E294 /* InterstitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A15CB827F375E00042E294 /* InterstitialVC.swift */; };
+		78A15CBC27F375E00042E294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A15CBA27F375E00042E294 /* Main.storyboard */; };
+		78A15CBE27F375E20042E294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A15CBD27F375E20042E294 /* Assets.xcassets */; };
+		78A15CC127F375E20042E294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A15CBF27F375E20042E294 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7883BD5227F48DCA0001A429 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7883BD5127F48DCA0001A429 /* GoogleAppMeasurement.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C79E95F38E24CEDA5F9E6F9 /* Pods-BannarAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannarAd.release.xcconfig"; path = "Target Support Files/Pods-BannarAd/Pods-BannarAd.release.xcconfig"; sourceTree = "<group>"; };
+		5D2F274A7B8A8EFE3E7A3CC8 /* Pods-BannarAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannarAd.debug.xcconfig"; path = "Target Support Files/Pods-BannarAd/Pods-BannarAd.debug.xcconfig"; sourceTree = "<group>"; };
+		685C92F27A4EF7FF2B678953 /* Pods_BannarAd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BannarAd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		782A0AB027F4A4E7009949E6 /* NativeAdsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdsVC.swift; sourceTree = "<group>"; };
+		784ABE3627F4A17E0032929B /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
+		7883BD3927F48D340001A429 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		7883BD3A27F48D340001A429 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7883BD3B27F48D340001A429 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7883BD3C27F48D340001A429 /* Pods_BannarAd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BannarAd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7883BD3D27F48D340001A429 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A15CB127F375E00042E294 /* BannarAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BannarAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A15CB427F375E00042E294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78A15CB627F375E00042E294 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78A15CB827F375E00042E294 /* InterstitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialVC.swift; sourceTree = "<group>"; };
+		78A15CBB27F375E00042E294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78A15CBD27F375E20042E294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78A15CC027F375E20042E294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78A15CC227F375E20042E294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A15CCD27F3AE980042E294 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Pods/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		78A15CCE27F3AE980042E294 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Pods/GoogleAppMeasurement/Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		78A15CCF27F3AE980042E294 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = Pods/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		78A15CD027F3AE980042E294 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		78A15CD127F3AE980042E294 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		78A15CD227F3AE980042E294 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A15CD327F3AE980042E294 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = Pods/GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		78A15CD427F3AE980042E294 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A15CD527F3AE980042E294 /* Pods_BannarAd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BannarAd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A15CD627F3AE980042E294 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A15D1B27F3B5CD0042E294 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A15D1E27F3B5DC0042E294 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A15D2127F3B5E90042E294 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = Pods/GoogleUserMessagingPlatform/Frameworks/Release/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78A15CAE27F375E00042E294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7883BD5027F48DCA0001A429 /* GoogleAppMeasurement.xcframework in Frameworks */,
+				1A332018F215C07D075DF7ED /* Pods_BannarAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07592A09E850C31E571D0CF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D2F274A7B8A8EFE3E7A3CC8 /* Pods-BannarAd.debug.xcconfig */,
+				2C79E95F38E24CEDA5F9E6F9 /* Pods-BannarAd.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78A15CA827F375E00042E294 = {
+			isa = PBXGroup;
+			children = (
+				78A15CB327F375E00042E294 /* BannarAd */,
+				78A15CB227F375E00042E294 /* Products */,
+				07592A09E850C31E571D0CF5 /* Pods */,
+				D58E91681CE4095EB0C0AB70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78A15CB227F375E00042E294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78A15CB127F375E00042E294 /* BannarAd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78A15CB327F375E00042E294 /* BannarAd */ = {
+			isa = PBXGroup;
+			children = (
+				78A15CB427F375E00042E294 /* AppDelegate.swift */,
+				78A15CB627F375E00042E294 /* SceneDelegate.swift */,
+				78A15CB827F375E00042E294 /* InterstitialVC.swift */,
+				784ABE3627F4A17E0032929B /* BannerVC.swift */,
+				782A0AB027F4A4E7009949E6 /* NativeAdsVC.swift */,
+				78A15CBD27F375E20042E294 /* Assets.xcassets */,
+				78A15CBA27F375E00042E294 /* Main.storyboard */,
+				78A15CBF27F375E20042E294 /* LaunchScreen.storyboard */,
+				78A15CC227F375E20042E294 /* Info.plist */,
+			);
+			path = BannarAd;
+			sourceTree = "<group>";
+		};
+		D58E91681CE4095EB0C0AB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7883BD3927F48D340001A429 /* GoogleAppMeasurementIdentitySupport.xcframework */,
+				7883BD3A27F48D340001A429 /* GoogleUtilities.framework */,
+				7883BD3B27F48D340001A429 /* nanopb.framework */,
+				7883BD3C27F48D340001A429 /* Pods_BannarAd.framework */,
+				7883BD3D27F48D340001A429 /* FBLPromises.framework */,
+				78A15D2127F3B5E90042E294 /* UserMessagingPlatform.xcframework */,
+				78A15D1E27F3B5DC0042E294 /* FBLPromises.framework */,
+				78A15D1B27F3B5CD0042E294 /* nanopb.framework */,
+				78A15CCD27F3AE980042E294 /* GoogleAppMeasurement.xcframework */,
+				78A15CCE27F3AE980042E294 /* GoogleAppMeasurement.xcframework */,
+				78A15CCF27F3AE980042E294 /* GoogleAppMeasurementIdentitySupport.xcframework */,
+				78A15CD027F3AE980042E294 /* GoogleMobileAds.xcframework */,
+				78A15CD127F3AE980042E294 /* GoogleMobileAds.xcframework */,
+				78A15CD227F3AE980042E294 /* GoogleUtilities.framework */,
+				78A15CD327F3AE980042E294 /* GoogleUtilities.xcframework */,
+				78A15CD427F3AE980042E294 /* nanopb.framework */,
+				78A15CD527F3AE980042E294 /* Pods_BannarAd.framework */,
+				78A15CD627F3AE980042E294 /* FBLPromises.framework */,
+				685C92F27A4EF7FF2B678953 /* Pods_BannarAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78A15CB027F375E00042E294 /* BannarAd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A15CC527F375E20042E294 /* Build configuration list for PBXNativeTarget "BannarAd" */;
+			buildPhases = (
+				195C2F65B9A3288A08C94697 /* [CP] Check Pods Manifest.lock */,
+				78A15CAD27F375E00042E294 /* Sources */,
+				78A15CAE27F375E00042E294 /* Frameworks */,
+				78A15CAF27F375E00042E294 /* Resources */,
+				FB844FA49D426B9FB25B8DEC /* [CP] Embed Pods Frameworks */,
+				7883BD5227F48DCA0001A429 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BannarAd;
+			productName = BannarAd;
+			productReference = 78A15CB127F375E00042E294 /* BannarAd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78A15CA927F375E00042E294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					78A15CB027F375E00042E294 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 78A15CAC27F375E00042E294 /* Build configuration list for PBXProject "BannarAd" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78A15CA827F375E00042E294;
+			productRefGroup = 78A15CB227F375E00042E294 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78A15CB027F375E00042E294 /* BannarAd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78A15CAF27F375E00042E294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A15CC127F375E20042E294 /* LaunchScreen.storyboard in Resources */,
+				78A15CBE27F375E20042E294 /* Assets.xcassets in Resources */,
+				78A15CBC27F375E00042E294 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		195C2F65B9A3288A08C94697 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BannarAd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB844FA49D426B9FB25B8DEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BannarAd/Pods-BannarAd-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BannarAd/Pods-BannarAd-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BannarAd/Pods-BannarAd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78A15CAD27F375E00042E294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A15CB927F375E00042E294 /* InterstitialVC.swift in Sources */,
+				784ABE3727F4A17E0032929B /* BannerVC.swift in Sources */,
+				782A0AB127F4A4E7009949E6 /* NativeAdsVC.swift in Sources */,
+				78A15CB527F375E00042E294 /* AppDelegate.swift in Sources */,
+				78A15CB727F375E00042E294 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78A15CBA27F375E00042E294 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A15CBB27F375E00042E294 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78A15CBF27F375E20042E294 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A15CC027F375E20042E294 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78A15CC327F375E20042E294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78A15CC427F375E20042E294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78A15CC627F375E20042E294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D2F274A7B8A8EFE3E7A3CC8 /* Pods-BannarAd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BannarAd/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yasser.iOS.BannarAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		78A15CC727F375E20042E294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C79E95F38E24CEDA5F9E6F9 /* Pods-BannarAd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BannarAd/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yasser.iOS.BannarAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78A15CAC27F375E00042E294 /* Build configuration list for PBXProject "BannarAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A15CC327F375E20042E294 /* Debug */,
+				78A15CC427F375E20042E294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A15CC527F375E20042E294 /* Build configuration list for PBXNativeTarget "BannarAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A15CC627F375E20042E294 /* Debug */,
+				78A15CC727F375E20042E294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78A15CA927F375E00042E294 /* Project object */;
+}

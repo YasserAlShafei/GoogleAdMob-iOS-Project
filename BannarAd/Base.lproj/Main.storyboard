@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZj-ky-2Qa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interstitial Ads-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InterstitialVC" customModule="BannarAd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jn-PZ-upM" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="766" width="414" height="96"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0U-Ee-Dc8">
+                                <rect key="frame" x="141" y="447" width="132" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="BLX-IH-fbf"/>
+                                    <constraint firstAttribute="width" constant="132" id="xEs-vZ-lXl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Click"/>
+                                <connections>
+                                    <action selector="addAds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Bh-Ao-OAJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="7jn-PZ-upM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Aps-0p-A8e"/>
+                            <constraint firstItem="7jn-PZ-upM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WE5-5l-6V4"/>
+                            <constraint firstItem="p0U-Ee-Dc8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="359" id="eHO-Df-Gcf"/>
+                            <constraint firstItem="7jn-PZ-upM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="766" id="wQV-Gc-4Xt"/>
+                            <constraint firstItem="p0U-Ee-Dc8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yqF-so-CI6"/>
+                            <constraint firstItem="7jn-PZ-upM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zv4-au-xGC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interstitial Ads" largeTitleDisplayMode="always" id="sqO-fp-hbw">
+                        <barButtonItem key="rightBarButtonItem" image="arrowshape.turn.up.right" catalog="system" id="6eI-wi-WGc">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="82b-xq-4xS" kind="show" id="pDm-cI-E7A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="banner" destination="7jn-PZ-upM" id="nag-ap-7lV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="-1"/>
+        </scene>
+        <!--Banner Ads-->
+        <scene sceneID="vID-IR-sbm">
+            <objects>
+                <viewController id="82b-xq-4xS" customClass="BannerVC" customModule="BannarAd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="byf-Ia-Oy0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4gl-Wt-1S6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Banner Ads" largeTitleDisplayMode="always" id="lAD-u8-8Rp">
+                        <barButtonItem key="rightBarButtonItem" image="rectangle.portrait.and.arrow.right" catalog="system" id="c6x-Vh-cMQ">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="IHO-Cp-kkc" kind="show" id="L9k-Zg-E5P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Th4-MW-wDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497.1014492753625" y="-1.3392857142857142"/>
+        </scene>
+        <!--Native Ads-->
+        <scene sceneID="0zj-Un-isi">
+            <objects>
+                <viewController id="IHO-Cp-kkc" customClass="NativeAdsVC" customModule="BannarAd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3hI-sO-FL3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wA1-Pb-PdW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Native Ads" id="h7q-a4-0M2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQJ-ld-6vF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="-1"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ISw-Lx-tNx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IZj-ky-2Qa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="buy-iE-R3X">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.08235294118" green="0.70980392160000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nh8-YR-Og1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azc-Se-Kf9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135" y="-1"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
